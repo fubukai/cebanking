@@ -12,6 +12,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
     <style>
+
         body{
             margin-top: 5rem;
             background-color: rgb(172, 170, 169);
@@ -19,7 +20,6 @@
         }
 
         h1{
-            text-align: center;
             color:green;
         }   
         
@@ -30,69 +30,64 @@
             background-size: 50px 30px;
         }
         
-        .account{
-          width:100px;
-          height:100px;
-          background-color:white;
-          
-        }
+        .createAccount{
+            width:500px;
+            height:425px;
+            margin-left: 525px;
+            margin-top: 0px;
+            position:absolute;
 
-        .receipt{
-          width:550px;
-          height:425px;
-          background-color:white;
-          margin-left: 475px;
-          margin-top: 50px;
-          border-radius: 3%;
         }
-
+        
+        
         #acc1{
           border-radius: 100%;
-          border: 1px solid green;
-          margin-left: 75px;
+          margin-left: 150px;
           margin-top: 50px;
           position:absolute;
         }
 
         #acc2{
-          border-radius: 100%;
-          border: 1px solid green;
-          margin-left: 375px;
+          border-radius: 3%;
+          margin-left: 950px;
           margin-top: 50px;
           position:absolute;
 
         }
 
         div.rightArrow2{
-          width: 75px;
-          height: 50px;
+          width: 125px;
+          height: 100px;
           background-image: url("rightArrow2.png");
-          background-size: 75px 50px;
-          margin-left: 235px;
-          margin-top: 70px;
+          background-size: 125px 100px;
+          margin-left: 685px;
+          margin-top: 200px;
           position:absolute;
         }
 
         #doneBtn{
-          margin-left: 1310px;
-          margin-top: 42px;
+          margin-left: 1320px;
+          margin-top: 565px;
           position: absolute;
         }
 
         .insertIMG{
-            margin-top: 28px;
-            margin-left: 18px;
+            margin-left: 155px;
+            margin-top: 80px;
         }
 
         p{
             font-family:'Lucida Sans Unicode';
-            font-size: 12px;
+            font-size: 20px;
             text-align: center;
-            margin-bottom: 6px;
         }
 
         .accNO{
-            margin-top: 50px;
+            margin-top: 30px;
+        }
+
+        .form-group{
+            margin-top: 230px;
         }
     </style>
 
@@ -105,13 +100,16 @@
         </a>
         <ul class="navbar-nav ">
             <li class="nav-item">
-                <a class="nav-link" href="file:///D:\Work\3.1\Soft En\Project\Project git\account.html">Account</a>
+                <a class="nav-link" href="file:///D:\Work\3.1\Soft En\Project\Project git\deposit.html">Deposit</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="file:///D:\Work\3.1\Soft En\Project\Project git\transfer.html">Transfer money</a>
+                <a class="nav-link" href="file:///D:\Work\3.1\Soft En\Project\Project git\withdraw.html">Withdraw</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="file:///D:\Work\3.1\Soft En\Project\Project git\paybill.html">Pay bill</a>
+                <a class="nav-link " href="file:///D:\Work\3.1\Soft En\Project\Project git\transferadmin.html">Transfer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="file:///D:\Work\3.1\Soft En\Project\Project git\paybill.html">Pay bill</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="file:///D:\Work\3.1\Soft En\Project\Project git\transaction.html">Transaction
@@ -124,22 +122,20 @@
 
 
     <div class="container-fluid">
-        <h1>Receipt</h1>
-        <div class="receipt">
-            <div class="account" id="acc1">
-                <div class="insertIMG"> <img src="account.png" width="65" height="45"></div>
-                <p class="accNO">XXX-120-060X</p>
-                <p class="amount"> Chompoonud k.</p>
-            </div>
-            <div class="rightArrow2"></div>
-            <div class="account" id="acc2">
-                <div class="insertIMG"> <img src="account.png" width="65" height="45"></div>
-                <p class="accNO">XXX-120-060X</p>
-                <p class="amount"> Chompoonud k.</p>
+        <div class="createAccount">
+            <div class="container-fluid">
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="text" style="color:rgb(102, 101, 101);">Bank account number</label>
+                        <input type="text" class="form-control text-center " id="accNoInput" name="name">
+                    </div>
+                </form>
             </div>
         </div>
-        <a href="file:///D:\Work\3.1\Soft En\Project\Project git\info.html" class="btn btn-success btn-md " id="doneBtn">Done</a>
+        <a href="file:///D:\Work\3.1\Soft En\Project\Project git\infoNew.html" class="btn btn-success btn-md " id="doneBtn">Done</a>
     </div>
+
+
 
 
 
